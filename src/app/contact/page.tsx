@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface socialprops {
+interface socialprops{
   image: string;
   name: string;
   link: string;
@@ -35,7 +35,7 @@ const page = () => {
       <div className="flex items-center flex-col  w-full max-w-[1024] py-15 lg:py-20 bg-zinc-900 gap-20 lg:gap-30 rounded-md">
         <div className=" p-2 overflow-hidden inline-block relative ">
           <Image
-            src="/pushpahas_pic3.jpg"
+            src="/images/pushpahas_pic4.jpg"
             alt="pushpahas"
             width={300}
             height={1000}
