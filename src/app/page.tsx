@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
 import Intro from "./components/intro";
 import Bio from "./components/Bio";
