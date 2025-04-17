@@ -6,7 +6,7 @@ const page = () => {
     <section className="flex flex-col items-center mx-auto max-w-[3480px] px-6 lg:px-20 3xl:px-0 gap-20 relative">
       <div className=" p-2 overflow-hidden inline-block ">
         <Image
-          src="/pushpahas_pic3.jpg"
+          src="/images/pushpahas_pic4.jpg"
           alt="pushpahas"
           width={300}
           height={1000}
