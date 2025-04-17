@@ -26,7 +26,7 @@ const Intro = () => {
       <div className="w-full flex items-center justify-center  p-10 ">
         <div className=" p-2 overflow-hidden inline-block ">
           <Image
-            src="/pushpahas_pic3.jpg"
+            src="/pushpahas_pic4.jpg"
             alt="pushpahas"
             width={300}
             height={1000}
