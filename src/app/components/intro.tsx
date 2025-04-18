@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import React from "react";
 import Image from "next/image";
+import * as motion from "motion/react-client"
 const Intro = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 3xl:px-0 py-10 lg:py-20">
@@ -24,6 +24,17 @@ const Intro = () => {
         </div>
       </div>
       <div className="w-full flex items-center justify-center  p-10 ">
+      
+        <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                scale: { type:"tween", visualDuration: 0.9, bounce: 0.5 },
+            }}
+        >
+
+
         <div className=" p-2 overflow-hidden inline-block ">
           <Image
             src="/images/pushpahas_pic4.jpg"
@@ -35,7 +46,9 @@ const Intro = () => {
             quality={100}
           />
         </div>
+        </motion.div>
       </div>
+
     </section>
   );
 };

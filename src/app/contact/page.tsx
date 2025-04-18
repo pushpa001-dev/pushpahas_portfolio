@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import * as motion from "motion/react-client"
 
 interface socialprops{
   image: string;
@@ -12,9 +13,10 @@ const Social = ({ image, name, link }: socialprops) => {
   return (
     <Link
       href={`${link}`}
-      className="flex items-center justify-center sm:justify-between p-2 sm:px-10 py-5 bg-zinc-700 gap-1 rounded-md "
+      className="flex items-center justify-center sm:justify-between p-2 sm:px-10 py-5 bg-zinc-700 gap-1 rounded-md hover:bg-zinc-400 "
       target="_blank"
     >
+
       <Image
         src={image}
         width={50}
@@ -22,7 +24,8 @@ const Social = ({ image, name, link }: socialprops) => {
         alt={name}
         className=" hover:shadow-gray-800 "
       />
-      <p className="hidden sm:flex  md:text-2xl text-slate-400 font-bold">
+      
+      <p className="hidden sm:flex  md:text-2xl hover:text-slate-900 text-slate-400 font-bold">
         {name}
       </p>
     </Link>
@@ -44,7 +47,7 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div className="grid grid-cols-2 gap-3 px-10 md:px-10 w-full items-center justify-center">
+        <div className="grid grid-cols-2 gap-3 px-10 md:px-10 w-full items-center justify-center ">
           <Social
             image="/github (1).png"
             name="Github"
