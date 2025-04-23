@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
 
 interface Biodataprops {
@@ -22,8 +24,7 @@ const Biodata = ({ title, content }: Biodataprops) => {
 
 const Bio = () => {
   return (
-    <section className="flex flex-col items-center justify-center max-w-[3840px] mx-auto px-6 lg:px-20 py-10 lg:py-20 mt-0 lg:mt-25">
-    
+    <section className="flex flex-col items-center justify-center max-w-[3840px] mx-auto px-6 lg:px-20 py-10 lg:py-20 mt-0 lg:mt-25  backdrop-blur-3xl bg-gray-400/10">
       <div className="flex items-center  flex-col gap-8 lg:gap-20 py-10 lg:py-5 xl:py-20">
         <div className="flex gap-4">
           <p className="text-bold text-2xl lg:text-4xl">About</p>
@@ -51,7 +52,6 @@ const Bio = () => {
         title="Tools"
         content="With proficiency in Tailwind CSS and React Next.js, I bring technical expertise to my designs, enabling me to craft sleek, efficient, and scalable websites. I thrive on experimenting with innovative concepts, particularly those aligned with futuristic and immersive design aesthetics. My interest in dark, glowing themes adds a creative edge to my work, allowing me to stand out in the world of web development."
       />
-      
     </section>
   );
 };

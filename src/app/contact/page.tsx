@@ -13,7 +13,7 @@ const Social = ({ image, name, link }: socialprops) => {
   return (
     <Link
       href={`${link}`}
-      className="flex items-center justify-center sm:justify-between p-2 sm:px-10 py-5 bg-zinc-700 gap-1 rounded-md hover:bg-zinc-400 "
+      className="flex items-center justify-center sm:justify-between p-2 sm:px-10 py-5 backdrop-blur-3xl bg-gray-400/10 gap-1 rounded-md hover:bg-zinc-900 pointer-events-auto active:bg-purple-300/50"
       target="_blank"
     >
 

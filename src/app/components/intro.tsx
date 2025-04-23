@@ -4,27 +4,10 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 const Intro = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 3xl:px-0 py-10 lg:py-20">
-      <div className="flex flex-col items-center w-full gap-10 lg:gap-20 p-10 ">
-        <div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
-            Hi, i'am
-          </h1>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
-            Pushpahas
-          </h1>
-        </div>
-        <div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
-            FRONT-END
-          </h1>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
-            DEVELOPER
-          </h1>
-        </div>
-      </div>
-      <div className="w-full flex items-center justify-center  p-10 ">
+    <section className="flex  items-center justify-center mx-auto max-w-[3048px] px-6 lg:px-20 3xl:px-0 mb-40 pb-15 lg:py-0 top-0 z-[-1] sticky">
       
+
+      <div className="w-full flex items-center justify-center p-10  relative z-[-1] top-0">
         <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -41,7 +24,7 @@ const Intro = () => {
             alt="pushpahas"
             width={300}
             height={1000}
-            className="hover:scale-110 duration-500 transition-transform md:w-[500px]"
+            className="hover:scale-110 duration-500 transition-transform w-auto md:w-[500px]"
             priority
             quality={100}
           />
@@ -49,6 +32,24 @@ const Intro = () => {
         </motion.div>
       </div>
 
+      <div className="flex flex-col items-center w-full gap-10 lg:gap-20 p-10  bottom-0 absolute">
+        <div className="w-full flex flex-col items-start justify-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+            Hi, i'am
+          </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+            Pushpahas
+          </h1>
+        </div>
+        <div className="w-full flex flex-col items-end justify-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
+            FRONT-END
+          </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
+            DEVELOPER
+          </h1>
+        </div>
+      </div>
     </section>
   );
 };

@@ -24,9 +24,9 @@ export default function TransitionLayout({ children }: { children: ReactNode }) 
           <>
             <motion.div
               key="curtain-bottom"
-              initial={{ scaleY: 0 }}
+              initial={{ scaleY: 0}}
               animate={{ scaleY: 1 }}
-              exit={{ scaleY: 0 }}
+              exit={{ scaleY: 0}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="fixed top-0 left-0 w-full h-[100vh] bg-purple-700 origin-bottom z-50"
             />
