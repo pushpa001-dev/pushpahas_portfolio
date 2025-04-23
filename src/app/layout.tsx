@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TransitionLayout from "./Transitionlayout";
-import { AnimatePresence } from "motion/react";
+
 
 
 const geistSans = Geist({
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
     
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased h-full`}
 
       >
     

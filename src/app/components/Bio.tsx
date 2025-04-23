@@ -14,7 +14,7 @@ const Biodata = ({ title, content }: Biodataprops) => {
         <h1 className="text-purple-800 text-2xl lg:text-7xl flex ">{title}</h1>
       </div>
       <div className="flex w-full xl:justify-center">
-        <p className="w-full lg:text-2xl  text-slate-500 xl:text-center">
+        <p className="w-full lg:text-2xl  text-slate-200 xl:text-center">
           {content}
         </p>
       </div>
@@ -30,7 +30,7 @@ const Bio = () => {
           <p className="text-bold text-2xl lg:text-4xl">About</p>
           <p className="text-purple-800 text-bold text-2xl lg:text-4xl">me</p>
         </div>
-        <div className="flex lg:max-w-[1100px] items-center justify-center text-slate-500 text-lg text-center">
+        <div className="flex lg:max-w-[1100px] items-center justify-center text-slate-200 text-lg text-center">
           <p className=" xl:text-3xl font-bold">
             Hi, I'm Pushpahas, a passionate front-end developer with a flair for
             designing modern and user-friendly web pages. I specialize in
