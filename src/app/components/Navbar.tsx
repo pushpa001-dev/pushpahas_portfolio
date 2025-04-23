@@ -25,7 +25,7 @@ const Navbar = () => {
             </p>
           </Link>
           <Link href="/contact">
-            <p className="hover:font-semibold text-purple-800 lg:text-2xl">
+            <p className="hover:font-semibold text-purple-700 lg:text-2xl">
               {" "}
               Contact{" "}
             </p>

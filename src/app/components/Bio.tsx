@@ -11,7 +11,7 @@ const Biodata = ({ title, content }: Biodataprops) => {
   return (
     <div className="flex flex-col items-center justify-center xl:flex-row py-20 xl:px-20 relative w-full gap-10 ">
       <div className="w-full flex items-center xl:justify-center">
-        <h1 className="text-purple-800 text-2xl lg:text-7xl flex ">{title}</h1>
+        <h1 className="text-purple-700 text-2xl lg:text-7xl flex ">{title}</h1>
       </div>
       <div className="flex w-full xl:justify-center">
         <p className="w-full lg:text-2xl  text-slate-200 xl:text-center">
@@ -28,7 +28,7 @@ const Bio = () => {
       <div className="flex items-center  flex-col gap-8 lg:gap-20 py-10 lg:py-5 xl:py-20">
         <div className="flex gap-4">
           <p className="text-bold text-2xl lg:text-4xl">About</p>
-          <p className="text-purple-800 text-bold text-2xl lg:text-4xl">me</p>
+          <p className="text-purple-700 text-bold text-2xl lg:text-4xl">me</p>
         </div>
         <div className="flex lg:max-w-[1100px] items-center justify-center text-slate-200 text-lg text-center">
           <p className=" xl:text-3xl font-bold">

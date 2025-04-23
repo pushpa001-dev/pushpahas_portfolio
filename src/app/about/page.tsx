@@ -23,7 +23,7 @@ const page = () => {
           web pages that leave a lasting impression.
         </p>
 
-        <p className="text-1xl lg:text-4xl text-purple-800 text-center lg:text-start font-bold">
+        <p className="text-1xl lg:text-4xl text-purple-700 text-center lg:text-start font-bold">
           I'm exploring 3D website design to push digital boundaries and craft
           immersive experiences.
         </p>

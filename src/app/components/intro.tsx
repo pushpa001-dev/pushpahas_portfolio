@@ -4,10 +4,10 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 const Intro = () => {
   return (
-    <section className="flex  items-center justify-center mx-auto max-w-[3048px] px-6 lg:px-20 3xl:px-0 lg:py-0 top-0 z-[-1] sticky h-[100vh]">
+    <section className="flex  items-center justify-center mx-auto max-w-[3048px] px-6 lg:px-20 3xl:px-0 top-0 z-[-1] sticky h-[100vh] overflow-auto stick ">
       
 
-      <div className="w-full flex items-center justify-center relative z-[-1] top-0 h-[100vh]">
+      <div className="w-full flex justify-center z-[-1]  top-0 h-[100vh]">
         <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -34,7 +34,7 @@ const Intro = () => {
 
       <div className="flex flex-col items-center bottom-[-10%] md:bottom-0 justify-center w-full gap-10 lg:gap-20 px-10 lg:px-30 absolute h-[100vh]">
         <div className="w-full flex flex-col items-start justify-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-300">
             Hi, i'am
           </h1>
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
@@ -45,7 +45,7 @@ const Intro = () => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
             FRONT-END
           </h1>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-700">
             DEVELOPER
           </h1>
         </div>

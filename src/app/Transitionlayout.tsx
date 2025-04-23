@@ -36,7 +36,7 @@ export default function TransitionLayout({ children }: { children: ReactNode }) 
               animate={{ scaleY: 0 }}
               exit={{ scaleY: 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-0 left-0 w-full h-[100vh] bg-purple-700 origin-top z-50"
+              className="fixed top-0 left-0 w-full h-[100vh] bg-purple-600 origin-top z-50"
             />
           </>
         )}

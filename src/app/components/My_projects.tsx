@@ -27,7 +27,7 @@ const My_projects = () => {
   return (
     <section className="flex items-center flex-col  justify-between  max-w-[3840px] gap-10 mx-auto w-full py-40 lg:py-7 xl:py-8 px-6 lg:px-20 bg-black">
       <div className="flex gap-2 items-center justify-center w-full">
-        <h1 className="text-purple-800  text-2xl lg:text-4xl ">My </h1>
+        <h1 className="text-purple-700  text-2xl lg:text-4xl ">My </h1>
         <h1 className="text-2xl lg:text-4xl">projects</h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-5 py-20 lg:flex-row w-full">
