@@ -20,7 +20,7 @@ const Footer = () => {
     <section className="w-full max-w-[3480px] mx-auto py-10 px-10 lg:py-5  flex items-center justify-between flex-col sm:flex-row gap-10 lg:px-20 3xl:px-0 bg-zinc-700 ">
       <div className="flex gap-1 text-2xl">
         <h1>Reach Pushpahas</h1>
-        <h1 className="text-purple-700 text-2xl">Now</h1>
+        <h1 className="text-red-700 text-2xl">Now</h1>
       </div>
       <div className=" grid grid-cols-4 gap-10 ">
         <Contactme

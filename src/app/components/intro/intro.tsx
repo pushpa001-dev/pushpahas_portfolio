@@ -12,7 +12,8 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-                duration:2,
+                duration:1,
+                delay:1,
                 scale: { type:"tween", visualDuration: 0.9, bounce: 0.5 },
             }}
         >
@@ -37,7 +38,8 @@ const Intro = () => {
           initial={{scaleY:0, scaleX:0 , y:0}}
           whileInView={{scaleY:1, scaleX:1, y:10}}
           exit={{scaleY:0, scaleX:0, y:0}}
-          transition={{duration:1}}
+          transition={{duration:1 , delay:1}}
+  
            className="flex flex-col items-center bottom-[-10%] md:bottom-0 justify-center w-full gap-10 lg:gap-20 px-10 lg:px-30 absolute h-[100vh]">
         <div className="w-full flex flex-col items-start justify-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-300 5xl:text-[1000px]">
@@ -48,10 +50,10 @@ const Intro = () => {
           </h1>
         </div>
         <div className="w-full flex flex-col items-end justify-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-800">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-red-800">
             FRONT-END
           </h1>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-purple-700">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-red-700">
             DEVELOPER
           </h1>
         </div>

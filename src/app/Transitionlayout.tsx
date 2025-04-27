@@ -28,7 +28,7 @@ export default function TransitionLayout({ children }: { children: ReactNode }) 
               animate={{ scaleY: 1 }}
               exit={{ scaleY: 0}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-0 left-0 w-full h-[100vh] bg-purple-700 origin-bottom z-50"
+              className="fixed top-0 left-0 w-full h-[100vh] bg-red-700 origin-bottom z-50"
             />
             <motion.div
               key="curtain-top"
@@ -36,7 +36,7 @@ export default function TransitionLayout({ children }: { children: ReactNode }) 
               animate={{ scaleY: 0 }}
               exit={{ scaleY: 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-0 left-0 w-full h-[100vh] bg-purple-600 origin-top z-50"
+              className="fixed top-0 left-0 w-full h-[100vh] bg-red-600 origin-top z-50"
             />
           </>
         )}
