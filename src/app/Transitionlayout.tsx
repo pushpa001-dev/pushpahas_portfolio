@@ -19,7 +19,7 @@ export default function TransitionLayout({ children }: { children: ReactNode }) 
   return (
     <>
       {/* Curtain Overlay */}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {showCurtain && (
           <>
             <motion.div

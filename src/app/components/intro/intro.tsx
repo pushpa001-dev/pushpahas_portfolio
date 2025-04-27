@@ -4,15 +4,15 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 const Intro = () => {
   return (
-    <section className="flex  items-center justify-center mx-auto max-w-[3048px] px-6 lg:px-20 3xl:px-0 top-0 z-[-1] sticky h-[100vh] overflow-auto stick ">
+    <section className="flex  items-center justify-center mx-auto max-w-[3048px] px-6 lg:px-20 3xl:px-0 top-0 z-[-1] h-[100vh] ">
       
 
       <div className="w-full flex justify-center z-[-1]  top-0 h-[100vh]">
         <motion.div
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-                duration: 0.8,
+                duration:2,
                 scale: { type:"tween", visualDuration: 0.9, bounce: 0.5 },
             }}
         >
@@ -32,9 +32,15 @@ const Intro = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col items-center bottom-[-10%] md:bottom-0 justify-center w-full gap-10 lg:gap-20 px-10 lg:px-30 absolute h-[100vh]">
+          <motion.div
+          
+          initial={{scaleY:0, scaleX:0 , y:0}}
+          whileInView={{scaleY:1, scaleX:1, y:10}}
+          exit={{scaleY:0, scaleX:0, y:0}}
+          transition={{duration:1}}
+           className="flex flex-col items-center bottom-[-10%] md:bottom-0 justify-center w-full gap-10 lg:gap-20 px-10 lg:px-30 absolute h-[100vh]">
         <div className="w-full flex flex-col items-start justify-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-300">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-300 5xl:text-[1000px]">
             Hi, i'am
           </h1>
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
@@ -49,7 +55,8 @@ const Intro = () => {
             DEVELOPER
           </h1>
         </div>
-      </div>
+      
+          </motion.div>
     </section>
   );
 };

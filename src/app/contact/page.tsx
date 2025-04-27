@@ -34,20 +34,20 @@ const Social = ({ image, name, link }: socialprops) => {
 
 const page = () => {
   return (
-    <section className="flex flex-col items-center justify-center mx-auto max-w-[3480px] px-6 lg:px-20 3xl:px-0 py-20 lg:py-30 relative ">
-      <div className="flex items-center flex-col  w-full max-w-[1024] py-15 lg:py-20 bg-zinc-900 gap-20 lg:gap-30 rounded-md">
+    <section className="flex flex-col lg:flex-row items-center justify-center mx-auto max-w-[3480px] px-6 lg:px-20 3xl:px-0 py-20 lg:py-30 relative h-[100vh]">
+      <div className="flex items-center flex-col lg:flex-row  w-full max-w-[1250PX] min-h-[550px] lg:px-10 py-10 lg:py-20 bg-zinc-900 gap-20 lg:gap-30 rounded-md">
         <div className=" p-2 overflow-hidden inline-block relative ">
           <Image
             src="/images/pushpahas_pic4.jpg"
             alt="pushpahas"
             width={300}
             height={1000}
-            className="hover:scale-110 duration-500 transition-transform md:w-[500px] rounded-2xl shadow-2xs"
+            className="hidden md:flex hover:scale-110 duration-500 transition-transform md:w-[500px] rounded-2xl shadow-2xs"
             priority
             quality={100}
           />
         </div>
-        <div className="grid grid-cols-2 gap-3 px-10 md:px-10 w-full items-center justify-center ">
+        <div className="grid grid-cols-2 gap-3 lg:gap-10 px-10 md:px-10 w-full items-center justify-center ">
           <Social
             image="/github (1).png"
             name="Github"
